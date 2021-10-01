@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.m520it.www.newsreader.widget.FitMeasureGridView
+        android:listSelector="@color/colorTransparent"
+        android:padding="8dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:id="@+id/gv_show_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"/>
+
+    <TextView
+        android:layout_margin="8dp"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="长按排序或删除"/>
+    <TextView
+		android:paddingTop="5dp"
+        android:paddingLeft="13dp"
+        android:background="@color/colorLightGray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击添加更多栏目"
+        android:textSize="16sp"/>
+    <com.m520it.www.newsreader.widget.FitMeasureGridView
+        android:background="@color/colorLightGray"
+        android:listSelector="@color/colorTransparent"
+        android:padding="8dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:numColumns="4"
+        android:id="@+id/gv_add_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+</ScrollView>

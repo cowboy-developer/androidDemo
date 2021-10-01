@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <ImageView
+        android:id="@+id/iv_hot"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        android:layout_marginRight="8dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_toRightOf="@id/iv_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"
+        android:text="河南一官员受贿后修无座庙宇 办公室里供奉着佛像"/>
+
+    <TextView
+        android:id="@+id/tv_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新闻热点"
+        android:textSize="12sp"
+        android:textColor="@color/colorGray"
+        android:layout_below="@id/tv_title"
+        android:layout_toRightOf="@id/iv_hot"
+        />
+
+    <TextView
+        android:id="@+id/tv_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1753跟帖"
+        android:textSize="12sp"
+        android:textColor="@color/colorGray"
+        android:layout_below="@id/tv_title"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="置顶"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/tv_title"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorPrimaryLight"
+        />
+
+</RelativeLayout>

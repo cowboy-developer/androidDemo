@@ -1,0 +1,69 @@
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center_vertical">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="45dp">
+
+<com.ogaclejapan.smarttablayout.SmartTabLayout
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/viewpagerTab"
+  android:layout_width="match_parent"
+  android:layout_height="45dp"
+  app:stl_defaultTabTextColor="@color/bg_news_tab_text_color_selector"
+  app:stl_defaultTabTextHorizontalPadding="18dp"
+  app:stl_indicatorColor="@color/colorMain"
+  app:stl_indicatorInterpolation="linear"
+  app:stl_indicatorThickness="2dp"
+  app:stl_underlineThickness="0dp"
+  app:stl_defaultTabTextSize="16sp"
+  app:stl_dividerThickness="0dp"
+  />
+
+        <TextView
+            android:id="@+id/tv_change_tip"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/colorLightGray"
+            android:text="切换栏目"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp">
+    <ImageButton
+        android:id="@+id/ibtn_arrow"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:src="@drawable/icon_news_column_add_down"
+        android:background="@drawable/bg_btn_arrow"/>
+
+        <TextView
+            android:id="@+id/tv_change_done"
+            android:visibility="gone"
+            android:background="@color/colorLightGray"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="完成"
+            android:textColor="@color/colorMain"
+            android:textSize="16sp"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>
+
+

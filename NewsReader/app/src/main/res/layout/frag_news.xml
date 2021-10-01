@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+<!--上面是一些图片 包括logo啥的-->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_news_title"
+        />
+    <!--中间是可用划来划去的标题展示-->
+    <include
+        android:id="@+id/include_tab"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        layout="@layout/news_viewpager_tab"
+        />
+    <!--最下面是一个翻页的ViewPager-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:id="@+id/fl_change_title"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"/>
+    </FrameLayout>
+    
+</LinearLayout>
